@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="fonts/fonts.css" rel="stylesheet" type="text/css" charset="utf-8" />
+
+	<title>idumotiva</title>
+
+	<style>
+		.boton-rojo {
+			line-height: 5px !important;
+			border-radius: 4px !important;
+			width: 100%;
+			padding: 14px !important;
+		}
+
+		.boton-envio {
+			line-height: 5px !important;
+			border-radius: 4px !important;
+			width: 150px !important;
+			padding: 18px !important;
+			margin-left: 5px;
+		}
+
+		.caja-login {
+			width: 100%;
+			background-color: rgba(204, 204, 204, 0.12);
+			border-radius: 3px !important;
+		}
+
+		.bg-login {
+
+			background-color: #fdfdfd;
+			min-height: 700px;
+		}
+
+		.select_top {
+			width: 100%;
+			border-radius: 3px !important;
+			padding-right: 25px!important;
+			background-size: 20px;
+			background-repeat: no-repeat;
+			background-position: 5%;
+			background-color: #fff!important;
+			padding-left: 50px;
+		}
+
+
+		.caja-confirmacion {
+			width: 100%;
+			height: auto !important;
+			background-color: rgba(255, 255, 255, 0.51);
+			border-radius: 8px !important;
+			font-size: 15px !important;
+			text-align: center;
+			padding: 20px;
+			font-family: 'Prelo-BookItalic';
+		}
+
+		.a_link {
+			color: #2d1e01;
+			font-size: 13px;
+			font-weight: 600;
+		}
+
+		.forms-login {
+			background: rgba(255, 255, 255, 0.5);
+			padding: 20px 30px;
+			border: 1px solid #afaeb0;
+			border-radius: 0 0 0 40px;
+			color: #002b5a;
+		}
+
+		.login-box span {
+			font-size: 22px;
+		}
+
+		.login-box select {
+			background-color: #e7ded8;
+			font-size: 13px;
+			opacity: 0.7;
+			padding-left: 20px;
+			background-position: 95%;
+			color: inherit;
+			margin-left: 0;
+			color: #2d1f02;
+			font-weight: bold
+		}
+
+	</style>
+</head>
+
+<body class="fondo login">
+	<div class="login-box" align="center">
+        <form id="form-login" action="j_spring_security_check" method="POST" novalidate="novalidate">
+            <img src="img/logo-15.PNG" width="210"
+                height="auto" style="text-align:center; display: block;margin:0 auto;">
+            <input name="password" type="hidden" value="123456">
+            <select id="slct-tipodoc" name="tipoDocumento" data-live-search="true" placeholder="TIPO DE DOCUMENTO">
+
+                <option value="0" data-min="10" data-max="10" data-alfan="1">
+                    TIPO DE DOCUMENTO
+                </option>
+
+                <option value="1" data-min="8" data-max="8" data-alfan="1">
+                    DNI
+                </option>
+
+                <option value="2" data-min="8" data-max="12" data-alfan="2">
+                    CARNET DE EXTRANJERIA
+                </option>
+
+                <option value="5" data-min="8" data-max="12" data-alfan="2">
+                    PASAPORTE
+                </option>
+
+            </select>
+            <input id="inpt-nrodocumento" name="nrodocumento" type="text" placeholder="Nº DE DOCUMENTO" value="">
+            <input type="hidden" id="inpt-username" name="username">
+            <a class="button btn-1" id="btn-login" href="index.html">Aceptar</a>
+            <div class="button-box">
+
+                <p class="error-pass"></p>
+            </div>
+        </form>
+        <div align="right" style="display:none">
+            <a href="#" class="a_link"><u>Olvidé mi contraseña</u></a>
+        </div>
+    </div>
+</body>
+
+</html>
